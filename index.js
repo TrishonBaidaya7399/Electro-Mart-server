@@ -116,7 +116,13 @@ async function run() {
       // console.log(object);
     })
     
-   
+     //get all items to cart
+     app.get('/cartitems', async(req, res)=>{
+      const cursor = cartCollection.find();
+      const result = await cursor.toArray();
+      res.send(result);
+
+    })
    
    
   //delete an item from cart
