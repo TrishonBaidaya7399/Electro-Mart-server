@@ -125,62 +125,9 @@ async function run() {
 
     })
    
-  //delete an item from cart
-app.delete('/cartitems/:id', async(req, res) => {
- const id = req.params.id;
- const query = {productId: id};
- const result = await cartCollection.deleteOne(query)
- res.send(result)
 
-})
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   } finally {
     // Ensures that the client will close when you finish/error
     // await client.close();
